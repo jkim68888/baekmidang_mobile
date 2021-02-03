@@ -1,0 +1,111 @@
+/*base*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+*{ padding: 0; margin: 0; font-family: 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', sans-serif; color: #736b74; }
+li{ list-style: none; }
+a{ text-decoration: none; }
+img{ display: block; border: none; }
+button, input[type=button], input[type=submit], input[type=reset]{ cursor: pointer; } 
+
+/* 폰트용 미디어쿼리 */
+@media screen and (max-width: 414px){
+    *{font-size: 18px;}
+}
+@media screen and (max-width: 375px){
+    *{font-size: 16px;}
+}
+@media screen and (max-width: 320px){
+    *{font-size: 14px;}
+}
+
+/*
+    -폰트사이즈(iphone6 기준 코딩시)
+    14px : 0.875rem
+    16px : 1rem
+    18px : 1.125rem
+    20px : 1.25rem
+    24px : 1.5rem
+    28px : 1.75rem
+    32px : 2rem
+*/
+
+html, body{ width: 100%; height: 100%; }
+
+/*panel*/
+.panel{ position: fixed; top: 0; right: -75%; z-index: 100000; width: 75%; height: 100%; background-color: #fff; overflow-y: auto; transition: 0.6s; }
+.panel.active{ right: 0; }
+.panel .ptop{ width: 100%; height: 70px; padding: 0 15px; box-sizing: border-box; background-color: #e1b7a7; }
+.panel .ptop ul{ float: right; }
+.panel .ptop li{ float: left; height: 70px; line-height: 70px; }
+.panel .ptop li:first-child{ margin-right: 35px; }
+.panel .ptop a{ font-size: 1.1875rem; font-weight: 700; color: #fff;}
+
+.gnb > ul > li{ width: 100%; }
+.gnb .main_nav{ display: block; width: 100%; height: 80px; padding: 0 25px; box-sizing: border-box; border-bottom: 1px solid #e1b7a7; font-size: 1.25rem; line-height: 80px; background-image: url(../images/common/panel_icon_out.png); background-repeat: no-repeat; background-size: 25px; background-position: calc(100% - 15px) center; }
+.gnb .main_nav.active{ color: #e1b7a7; background-image: url(../images/common/panel_icon_over.png); }
+.gnb .sub_nav{ display: none; width: 100%; background-color: #f0f0f0; }
+.gnb .sub_nav li{ width: 100%; height: 50px; }
+.gnb .sub_nav li:last-child{ border-bottom: 1px solid #e1b7a7; }
+.gnb .sub_nav a{ display: block; width: 75%; height: 100%; margin: 0 44px 0 25px; box-sizing: border-box; line-height: 50px; border-bottom: 1px solid #736b74; }
+.gnb .sub_nav li:last-child a{ border: none; }
+
+/* panel_bg */
+.panel_bg{ display: none; position: fixed; top: 0; left: 0; z-index: 10000; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); }
+.panel_bg a{ position: absolute; left: 18px; top: 20px; width: 28px; height: 28px; }
+.panel_bg img{ width: 100%; }
+
+/*header*/
+header{ display: flex; justify-content: space-between; width: 100%; height: 70px; background-color: #736b74; }
+.menu{ height: 25px; padding: 25px 15px; }
+.store{ height: 25px; padding: 22px 15px; }
+header h1{ height: 50px; padding: 10px 0; }
+header h1 img{ height: 100%; }
+.menu img{ height: 22px; }
+.store img{ height: 25px; }
+
+/*footer*/
+footer{ background-color: #736b74; }
+.ftop ul{ display: flex; justify-content: center; width: 100%; height: 50px; line-height: 50px; }
+.ftop li{ padding: 0 13px; }
+.ftop li:after{ position: relative; left: 13px; top: -3px; content: '|'; color: #fff; font-size: 0.68rem; }
+.ftop li:last-child:after{ content: ''; }
+.ftop a{ float: left; font-size: 0.875rem; color: #fff; }
+.fbottom ul{ display: flex; justify-content: center; width: 100%; height: 16px; line-height: 16px; }
+.fbottom li{ padding: 0 3px; }
+.fbottom li:after{ position: relative; left: 3px; top: 0; content: '·'; color: #fff; }
+.fbottom li:last-child:after{ content: ''; }
+.fbottom a{ float: left; font-size: 0.75rem; color: #fff; }
+.tel{ display: flex; justify-content: center; height: 30px; line-height: 30px; color: #fff; font-size: 0.75rem; }
+.tel a{ padding-left: 5px; color: #fff; font-size: 0.75rem; }
+footer p{ display: flex; justify-content: center; padding-bottom: 20px; height: 15px; line-height: 15px; color: #fff; font-size: 0.75rem; }
+
+/*top_btn*/
+.top_btn{ display: none; position: fixed; bottom: 22px; right: 30px; z-index: 1; width: 40px; height: 40px; }
+.top_btn a{ display: block; width: 100%; height: 100%; padding: 3.5px 0; box-sizing: border-box; border-radius: 5px; background-color: #fff; box-shadow: 1px 1px #666; color: #333; font-size: 0.75rem; line-height: 15px; text-align: center; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+/*title*/
+h2{ width: 100%; height: 35px; text-align: center; line-height: 35px; letter-spacing: -0.05em; font-weight: 700; font-size: 1.5rem; }
+h3{ width: 100%; height: 40px; line-height: 40px; text-align: center; letter-spacing: -0.05em; font-weight: 700; font-size: 1.5rem; }
+h4{ width: 100%; text-align: center; font-weight: 400; font-size: 0.815rem; }
+.left_title{ flex: 1; width: 100%; height: 50px; text-align: left; line-height: 50px; letter-spacing: -0.05em; font-weight: 700; font-size: 1.5rem; }
+
+/*popup*/
+.popup{ position: fixed; left: 0; top: 0; z-index: 100000; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); }
+.pwrap{ position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; width: 70%; height: 60%; background-image: url(../images/main/popup_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.pwrap h3{ font-size: 1.375rem; font-weight: 700; color: #e1b7a7; text-align: center; margin: auto 0; }
+.popup .ptop{ position: absolute; left: 0; right: 0; top: -9%; bottom: 0; margin: auto; width: 80%; height: 70%; background-color: #fff; }
+.popup .ptop p{ padding-top: 15%; box-sizing: border-box; text-align: center; line-height: 16px; font-size: 0.8125rem; color: #000; }
+.popup .ptop span{ color: #e1b7a7; font-size: 0.8125rem; }
+.popup button{ position: absolute; left: 0; right: 0; top: 70%; bottom: 0; margin: auto; width: 60%; height: 10%; background-color: #f5e2e8; }
+.popup button .text{ font-size: 0.8125rem; color: #000; }
+.pbottom{ position: absolute; bottom: 0; width: 100%; height: 50px; line-height: 50px; }
+#close{ float: right; width: 50%; text-align: center; background-color: #736b74; font-size: 0.8125rem; color: #fff; }
+#close_today{ float: left; width: 50%; text-align: center; background-color: #fff; font-size: 0.8125rem; color: #000; }
+
+/*main*/
+main .swiper-container{ width: 100%; }
+main .swiper-pagination-bullet{ width: 16px; height: 16px; border-radius: 8px; background-color: #fff; opacity: 0.5; }
+main .swiper-pagination-bullet-active{ opacity: 1; }
+main .swiper-button-next, main .swiper-button-prev{ color: #fff; opacity: 0.5; }
+main img{ width: 100%; }
+
+/*icecream & bakery*/
+.icecream, .bakery{ margin-top: 15px; box-sizing: border-box; background-color: #fff; }
+.icecream .swiper-container, .bakery .swiper-container{ display: flex; width: 100%; padding: 15px 0 10px 15px; box-sizing: border-box; }
+.icecream .swiper-slide, .bakery .swiper-slide{ width: 100%; margin-right: 10px; }
+.icecream img, .bakery img{ width: 100%; }
+
+/*notice & event*/
+.notice, .event{ display: flex; position: relative; width: 100%; height: 50px; padding: 0 15px; box-sizing: border-box; background-color: #fff; }
+.notice{ margin-top: 15px; box-sizing: border-box; }
+.notice h2{ padding-right: 20px; }
+.event h2{ padding-right: 30px; }
+.notice_event .swiper-slide{ display: block; width: 100%; height: 50px; line-height: 50px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.notice_event img{ display: inline-block; width: 20px; padding-top: 16px; text-align: right; }
+.notice:after{ content: ''; position: absolute; bottom: 0; left: 15px; width: calc(100% - 30px); height: 1px; background-color: #736b74; }
+
+/*workshop*/
+.workshop{ margin-top: 15px; box-sizing: border-box; }
+.bg_wrap{ background-image: url(../images/main/workshop_bg.jpg); background-size: cover; background-position: center; }
+.workshop img{ height: 45px; margin: 0 auto; padding-top: 15px; }
+.workshop p{ color: #fff; font-size: 0.9375rem; text-align: center; }
+.up_txt{ margin-top: 15px; margin-bottom: 12px; box-sizing: border-box; }
+.down_txt{ margin-bottom: 10px; }
+button{ width: 100px; height: 25px; margin-bottom: 14px; box-sizing: border-box; border: none; border-radius: 5px; box-shadow: 1px 1px #736b74; text-align: center; background-color: #fff; color: #736b74; font-size: 0.815rem; cursor: pointer; }
+.view_more{ text-align: center; }
+
+/*promotion*/
+.promotion{ display: flex; flex-direction: row; margin-top: 15px; box-sizing: border-box; background-color: #fff; }
+video{ width: 100%; height: 100%; }
+.video{ flex: 1; padding-left: 15px; box-sizing: border-box; }
+.txt_wrap{ margin: 0 15px 10px 15px; box-sizing: border-box; }
+.promotion p{ text-align: center; font-size: 0.75rem; letter-spacing: -0.05em; }
+
+/*faq*/
+.faq{ margin-top: 15px; box-sizing: border-box; background-color: #fff; }
+.faq ul{ width: 100%; height: 140px; }
+.faq li{ float: left; width: 50%; height: 70px; padding-left: 15px; box-sizing: border-box; }
+.faq li:nth-child(1){ border-top: 1px solid #e1b7a7; border-right: 1px solid #e1b7a7; border-bottom: 1px solid #e1b7a7; box-sizing: border-box; }
+.faq li:nth-child(2){ border-top: 1px solid #e1b7a7; box-sizing: border-box; }
+.faq li:nth-child(3){ border-bottom: 1px solid #e1b7a7; border-right: 1px solid #e1b7a7; box-sizing: border-box; }
+.faq li:nth-child(4){ border-bottom: 1px solid #e1b7a7; border-top: 1px solid #e1b7a7; box-sizing: border-box; }
+
+.faq img{ float: left; height: 40px; padding-top: 15px; }
+.faq p{ float: right; width: 60%; line-height: 70px; font-size: 0.9375rem; }
+.faq a{ display: block; width: 100%; height: 100%; }
+
+/*sns*/
+.sns{ width: 100%; height: 50px; margin-top: 15px; box-sizing: border-box; background-color: #fff; }
+.sns ul{ display: flex; justify-content: center; }
+.sns img{ height: 25px; margin: 13px 0; }
+.sns li:nth-child(2){ padding: 0 20px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
